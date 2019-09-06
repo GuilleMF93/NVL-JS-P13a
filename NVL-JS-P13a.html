@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+ <head>
+ 	<meta charset = "utf8">
+	<title>NVL-JS-P12b</title>
+ </head>
+
+ <body>
+
+ <script>
+ 	var primos = [];
+
+ 	function calcPrimos(n){
+ 		for(var i=1; true; i++){
+ 			if(primos.length==n){
+ 				break;
+ 			}
+ 			else if(i==3||i==5||i==7){
+ 				primos.push(i);
+ 			}else if(n!=0&&i%2!=0&&i%3!=0&&i%5!=0&&i%7!==0){
+ 				primos.push(i);
+ 			} 			
+ 		}
+ 		return;
+ 	}
+
+ 	var n = 666;
+ 	calcPrimos(n);
+ 	document.write(primos);
+ </script>
+ </body>
+</html>
